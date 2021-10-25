@@ -5,7 +5,7 @@ import './Scale.css';
 function Scale(props){
     return (
         <div className="Scale" >
-            <p className="scaleTitle" ></p>
+            <p className="scaleTitle" >{props.scaleTitle}</p>
         </div>
     )
 }

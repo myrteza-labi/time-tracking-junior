@@ -5,7 +5,7 @@ import './ProfilePicture.css';
 function ProfilePicture(props){
     return (
         <div className="ProfilePicture" >
-            <img className="profilePictureImg"/>
+            <img className="profilePictureImg" src={props.src} alt={props.alt}/>
         </div>
     )
 }

@@ -5,7 +5,7 @@ import './Time.css';
 function Time(props){
     return (
         <div className="Time" >
-            <p className="timeText" ></p>
+            <p className="timeText" >{props.nHours}hrs</p>
         </div>
     )
 }

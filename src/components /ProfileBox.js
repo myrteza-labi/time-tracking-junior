@@ -1,13 +1,15 @@
 import React from 'react'; 
 import './ProfileBox.css'; 
+import ProfilePicture from './ProfilePicture'; 
 
 
 function ProfileBox(props){
     return (
         <div className="ProfileBox">
+            <ProfilePicture src={props.src} alt={props.alt}/>
             <div className="proflieInfos">
                 <p className="reportText" >Report for</p>
-                <p className="profileName" ></p>
+                <p className="profileName" >{props.name} {props.lastname}</p>
             </div>
         </div>
     )
