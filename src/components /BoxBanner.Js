@@ -3,7 +3,7 @@ import './BoxBanner.css';
 
 function BoxBanner(props){
     return (
-        <div className={"BoxBanner" + props.bannerClassName}  ></div>
+        <div className={"BoxBanner " + props.bannerClassName}  ></div>
     )
 }
 

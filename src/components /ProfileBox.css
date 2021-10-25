@@ -1,0 +1,14 @@
+.ProfileBox {
+    padding: 35px 0; 
+    display: flex; 
+    flex-direction: row; 
+    background-color: #5747EA; 
+
+    color: #000; /*  à retirer  */
+
+}
+
+.profileInfos {
+    display: flex; 
+    flex-direction: column; 
+}

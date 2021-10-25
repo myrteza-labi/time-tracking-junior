@@ -1,0 +1,26 @@
+.ManagementBox {
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+}
+
+.mainCtnManagement {
+    display: flex; 
+    flex-direction: row; 
+    background-color: #1C204B; 
+}
+
+.activityHoursCtn {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.imgAndOldDataCtn {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.dotIcon {
+    height: 5px; 
+    width: 20px; 
+}

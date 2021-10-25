@@ -11,8 +11,6 @@ function ManagementBox(props){
         <div className="ManagementBox" >
             <BoxBanner bannerClassName={props.bannerClassName}/>
             <div className="mainCtnManagement" >
-
-            </div>
             <div className="activityHoursCtn" >
                 <Activity activityTitle={props.activityTitle}/>
                 <Time nHours={props.nHours}/>
@@ -21,6 +19,8 @@ function ManagementBox(props){
                 <img className="dotIcon" src={dotIcon} alt="3 dots ellips icon" />
                 <OldTime lastHour={props.lastHour}/>
             </div>
+            </div>
+            
         </div>
     )
 }

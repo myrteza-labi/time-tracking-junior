@@ -1,18 +1,29 @@
+.BoxBanner{
+    min-width: 100%; 
+    min-height: 40px; 
+}
+
 .work {
+    background-color: #FF8B64; 
     background-image : url("../images/icon-work.svg"); 
 }
 .play {
+    background-color: #55C2E6; 
     background-image : url("../images/icon-play.svg"); 
 }
 .study {
+    background-color: #FF5E7D; 
     background-image : url("../images/icon-study.svg"); 
 }
 .exercise {
+    background-color: #4BCF82; 
     background-image : url("../images/icon-exercise.svg"); 
 }
 .social {
+    background-color: #7335D2; 
     background-image : url("../images/icon-social.svg"); 
 }
 .selfcare {
+    background-color: #F1C75B; 
     background-image : url("../images/icon-self-care.svg"); 
 }
