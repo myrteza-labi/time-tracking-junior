@@ -10,3 +10,18 @@
     border: 3px solid #fff; 
     border-radius: 40px; 
 }
+
+/*  desktop style   */
+@media screen and (min-width: 1440px){
+    .ProfileBox {
+        align-items: flex-start; 
+        flex-direction: column; 
+        min-height: 355px; 
+        padding: 35px; 
+    }
+    .ProfilePicture {
+        width: 78px; 
+        height: 78px; 
+        margin: 0; 
+    }
+}

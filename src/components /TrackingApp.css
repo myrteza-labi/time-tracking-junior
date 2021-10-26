@@ -10,7 +10,27 @@
 @media screen and (min-width: 1440px){
     .TrackingApp {
         width: 1440px; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 0 165px; 
         flex-direction: row; 
         min-height: 1024px; 
+    }
+    .boxContainer {
+        /*max-height: 600px;      test */
+        width: 825px; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between; 
+        flex-wrap: wrap; 
+    }
+    .trackingAppMainCtn{
+        display: flex; 
+        flex-direction: row; 
+    }
+    .container3Boxes {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
     }
 }
