@@ -7,6 +7,7 @@
 body {
     min-height: 100vh; 
     color: #fff; /*  à retirer  */
+    font-family: 'Rubik', sans-serif;
 }
 
 #root {

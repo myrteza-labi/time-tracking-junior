@@ -1,14 +1,39 @@
 .ProfileBox {
+    z-index: 1; 
     padding: 35px 0; 
     display: flex; 
     flex-direction: row; 
+    align-items: center; 
+    overflow: hidden; 
     background-color: #5747EA; 
-
     color: #000; /*  à retirer  */
-
+    border-radius: 15px; 
 }
 
 .profileInfos {
     display: flex; 
     flex-direction: column; 
+    margin: 0 0 0 20px; 
+}
+
+.reportText {
+    font-size: 15px; 
+    font-weight: 300; 
+    line-height: 18px; 
+    color: #BBC0FF;
+}
+
+.profileName{
+    font-size: 24px; 
+    font-weight: 300; 
+    line-height: 24px; 
+    color: #FFF;
+    margin: 4px 0 0 0; 
+}
+
+/*  desktop style   */
+@media screen and (min-width: 1440px){
+    .ProfileBox {
+        flex-direction: column; 
+    }
 }

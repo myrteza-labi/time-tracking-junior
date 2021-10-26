@@ -1,0 +1,10 @@
+.OldTime{
+    margin: 0 0 8px 0; 
+}
+
+.oldTimeText{
+    font-size: 15px; 
+    font-weight: 300; 
+    line-height: 18px; 
+    color: #BBC0FF;
+}

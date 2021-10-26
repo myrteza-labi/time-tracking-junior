@@ -1,9 +1,12 @@
 .ProfilePicture {
     width: 64px; 
     height: 64px; 
+    margin: 0 0 0 30px; 
 }
 
 .profilePictureImg {
     width: 100%; 
     height: 100%; 
+    border: 3px solid #fff; 
+    border-radius: 40px; 
 }
