@@ -2,7 +2,7 @@ import React from 'react';
 import './TrackingApp.css'; 
 import ProfileTimeBox from './ProfileTimeBox'; 
 import ManagementBox from './ManagementBox'; 
-import data from '../data.json'; 
+import jsonData from '../data.json'; 
 
 
 /*  
@@ -11,30 +11,48 @@ import data from '../data.json';
     3 inside any of them. 
 */
 
-function TrackingApp(props){
-    return (
-        <div className="TrackingApp" >
-            <div className="trackingAppMainCtn" >
-            <ProfileTimeBox name={"Jeremy"} lastname={"Robson"}/>
-            <div className="boxContainer" >
+class  TrackingApp extends React.Component{
+    constructor(props){
+        super(props); 
+        this.state ={
+            data : jsonData, /* a supprimer */ 
+            timeframes: "daily", 
+        }
+        this.handleClick = this.handleClick.bind(this); 
+    }
 
-            
-                <div className="container3Boxes" >
-                    <ManagementBox lastHour={"36"} nHours={"32"} activityTitle={"Work"} bannerClassName={"work"}/>
-                    <ManagementBox lastHour={"36"} nHours={"10"} activityTitle={"Play"} bannerClassName={"play"}/>
-                    <ManagementBox lastHour={"7"} nHours={"4"} activityTitle={"Study"} bannerClassName={"study"}/>
+    handleClick(){
+        console.log(this.state.data[0]); 
+    }
+    render(){
+
+        const data = this.state.data; 
+        const timeframes = this.state.timeframes; 
+
+        return (
+            <div className="TrackingApp" onClick={this.handleClick}>
+                <div className="trackingAppMainCtn" >
+                <ProfileTimeBox name={"Jeremy"} lastname={"Robson"}/>
+                <div className="boxContainer" >
+    
+                
+                    <div className="container3Boxes" >
+                        <ManagementBox number={0} timeframes={timeframes} bannerClassName={"work"}/>
+                        <ManagementBox number={1} timeframes={timeframes} bannerClassName={"play"}/>
+                        <ManagementBox number={2} timeframes={timeframes} bannerClassName={"study"}/>
+                    </div>
+    
+                    <div className="container3Boxes" >
+                        <ManagementBox number={3} timeframes={timeframes} bannerClassName={"exercise"}/>
+                        <ManagementBox number={4} timeframes={timeframes} bannerClassName={"social"}/>
+                        <ManagementBox number={5} timeframes={timeframes} bannerClassName={"selfcare"}/> 
+                    </div>
+    
                 </div>
-
-                <div className="container3Boxes" >
-                    <ManagementBox lastHour={"5"} nHours={"4"} activityTitle={"Exercice"} bannerClassName={"exercise"}/>
-                    <ManagementBox lastHour={"10"} nHours={"5"} activityTitle={"Social"} bannerClassName={"social"}/>
-                    <ManagementBox lastHour={"2"} nHours={"2"} activityTitle={"Self Care"} bannerClassName={"selfcare"}/> 
                 </div>
-
             </div>
-            </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default TrackingApp; 
