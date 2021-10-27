@@ -5,7 +5,7 @@ import './Scale.css';
 function Scale(props){
     return (
         <div className="Scale" >
-            <p className="scaleTitle" >{props.scaleTitle}</p>
+            <p onClick={props.onClick} number={props.number} className={props.className} >{props.scaleTitle}</p>
         </div>
     )
 }

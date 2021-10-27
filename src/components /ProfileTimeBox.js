@@ -9,7 +9,7 @@ function ProfileTimeBox(props){
     return (
         <div className="ProfileTimeBox" >
             <ProfileBox src={profilePicture} alt={"photo de Jeremy Robson "} name={props.name} lastname={props.lastname}/>
-            <ScaleBox/>
+            <ScaleBox activeScale={props.activeScale} onScaleClick={props.onScaleClick}/>
         </div>
     )
 }

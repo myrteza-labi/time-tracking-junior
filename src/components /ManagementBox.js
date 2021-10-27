@@ -25,18 +25,6 @@ class ManagementBox extends React.Component{
         let currentTime = currentTimeFrames.current; 
         let previousTime = currentTimeFrames.previous; 
 
-
-
-        
-        
-
-        /*console.log(ArrayOfTimeframes) /* test / output: array of timeframes */
-        /*console.log(currentTimeFrames) /* test / output: daily -> current and previous   */
-        /*console.log(data[number].timeframes.daily.current) /* test / output: 0, 1, 2, 0 , 2 etc...  */
-        /*console.log(data[number].timeframes.daily.previous) /* test / output: 0, 1, 2, 0 , 2 etc...  */
-
-
-
         return (
             <div className="ManagementBox" number={this.props.number}>
                 <BoxBanner bannerClassName={this.props.bannerClassName}/>

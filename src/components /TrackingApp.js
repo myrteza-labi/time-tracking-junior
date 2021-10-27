@@ -2,7 +2,6 @@ import React from 'react';
 import './TrackingApp.css'; 
 import ProfileTimeBox from './ProfileTimeBox'; 
 import ManagementBox from './ManagementBox'; 
-import jsonData from '../data.json'; 
 
 
 /*  
@@ -15,24 +14,48 @@ class  TrackingApp extends React.Component{
     constructor(props){
         super(props); 
         this.state ={
-            data : jsonData, /* a supprimer */ 
             timeframes: "daily", 
+            activeScale : 0, 
         }
-        this.handleClick = this.handleClick.bind(this); 
+        this.handleScaleClick = this.handleScaleClick.bind(this); 
+        this.setActiveScale = this.setActiveScale.bind(this); 
+
     }
 
-    handleClick(){
-        console.log(this.state.data[0]); 
+    handleScaleClick(e){
+        this.getScaleNumber(e)
+        this.setActiveScale(e)
+        let newTimeframesUpper = e.target.innerHTML; 
+        let newTimeframesLower = newTimeframesUpper.toLowerCase(); 
+        this.setState({
+            timeframes : newTimeframesLower, 
+        })
     }
+
+    getScaleNumber(e){
+        let scaleNumber = e.target.getAttribute("number")
+        return scaleNumber; 
+    }
+
+    setActiveScale(e){
+        this.setState({
+            activeScale : this.getScaleNumber(e)
+        })
+    }
+    
+
+
+    
+
     render(){
 
-        const data = this.state.data; 
         const timeframes = this.state.timeframes; 
+        const activeScale = this.state.activeScale; 
 
         return (
             <div className="TrackingApp" onClick={this.handleClick}>
                 <div className="trackingAppMainCtn" >
-                <ProfileTimeBox name={"Jeremy"} lastname={"Robson"}/>
+                <ProfileTimeBox onScaleClick={this.handleScaleClick} activeScale={activeScale} name={"Jeremy"} lastname={"Robson"}/>
                 <div className="boxContainer" >
     
                 
@@ -56,3 +79,5 @@ class  TrackingApp extends React.Component{
 }
 
 export default TrackingApp; 
+
+/* scaleTitle */
