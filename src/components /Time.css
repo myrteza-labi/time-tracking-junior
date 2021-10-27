@@ -5,3 +5,14 @@
     color: #FFF; 
     margin: 6px 0 0 0; 
 }
+
+/*  desktop style   */
+@media screen and (min-width: 1440px){
+    .Time {
+        margin: 24px 0 0 0; 
+    }
+    .timeText {
+        font-size: 56px; 
+        line-height: 65px; 
+    }
+}

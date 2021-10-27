@@ -42,10 +42,20 @@
         height: 250px; 
     }
     .mainCtnManagement{
+        position: relative; 
         overflow: hidden; 
         z-index: 1; 
         flex-direction: column; 
         border-radius: 15px; 
+    }
+    .imgAndOldDataCtn{
+        align-items: flex-start; 
+        margin: 6px 0 0 0; 
+    }
+    .dotIcon {
+        position: absolute; 
+        top: 30px; 
+        right: 30px; 
     }
 }
 

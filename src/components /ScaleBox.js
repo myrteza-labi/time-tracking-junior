@@ -30,4 +30,3 @@ function ScaleBox(props){
 
 export default ScaleBox; 
 
-/* scaleTitle */
