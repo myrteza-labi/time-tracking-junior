@@ -21,9 +21,9 @@ function ScaleBox(props){
 
     return (
         <div className="ScaleBox" >
-            <Scale  className={scalesClasseName[0]} number={0} onClick={props.onScaleClick} scaleTitle={"Daily"}/>
-            <Scale  className={scalesClasseName[1]} number={1} onClick={props.onScaleClick}scaleTitle={"Weekly"}/>
-            <Scale  className={scalesClasseName[2]} number={2} onClick={props.onScaleClick} scaleTitle={"Monthly"}/>
+            <Scale  className={newArrayOfClssName[0]} number={0} onClick={props.onScaleClick} scaleTitle={"Daily"}/>
+            <Scale  className={newArrayOfClssName[1]} number={1} onClick={props.onScaleClick}scaleTitle={"Weekly"}/>
+            <Scale  className={newArrayOfClssName[2]} number={2} onClick={props.onScaleClick} scaleTitle={"Monthly"}/>
         </div>
     )
 }
